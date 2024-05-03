@@ -1,18 +1,15 @@
 package com.epam.mjc.nio;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.io.StringReader;
 import java.nio.ByteBuffer;
-import java.nio.file.Files;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
 public class FileReader {
-    private final static Logger LOG = Logger.getLogger(FileReader.class.getCanonicalName());
+    private static final Logger LOG = Logger.getLogger(FileReader.class.getCanonicalName());
 
     public Profile getDataFromFile(File file) {
         var res = new Profile();
